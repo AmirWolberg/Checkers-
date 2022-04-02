@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Checkers.Ai">
+    <Position X="32" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAEAAIAjAIAAEAEAAAAAAAAAIAgAwAAAABAAAAAI=</HashCode>
+      <FileName>Models\Bot\Ai.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="AiColor" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="TranspositionTable" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Checkers.Board">
+    <Position X="8.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAQgAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Models\Board.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="BP" />
+      <Field Name="WP" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Checkers.GraphicsExtensions">
+    <Position X="16.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assist Functions\GraphicsExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Checkers.Heuristics">
+    <Position X="27.5" Y="1" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="Checkers.Heuristics.HeuristicFunc" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Models\Bot\Heuristics.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAABAAAAAAIgAAAAAAAAAAEAAAAQAAAAAAA=</HashCode>
+      <FileName>Models\Bot\Heuristics.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Checkers.ListFuncs&lt;T&gt;">
+    <Position X="15" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Assist Functions\ListFuncs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Checkers.Model">
+    <Position X="10.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAABAAAAAgAAEAAAAAwAgQAAAAQCCIAAAA=</HashCode>
+      <FileName>Models\Model.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="GameBoard" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Checkers.Player">
+    <Position X="8.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAIAAAAAAAAAAAAIAAAAAAAgAABAAA=</HashCode>
+      <FileName>Models\Player.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Color" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Checkers.Program">
+    <Position X="38.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAEAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="UI" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Checkers.TranspositionFuncs">
+    <Position X="24.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Assist Functions\TranspositionFuncs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Checkers.UInt32Funcs">
+    <Position X="18.5" Y="4.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="Checkers.UInt32Funcs.shift_operation" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assist Functions\UInt32Funcs.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assist Functions\UInt32Funcs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Checkers.UserInterface">
+    <Position X="34.75" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>/0KLAADAmKAIRRSKwsyRAWoGWEYdDiChALEABy9hY3Q=</HashCode>
+      <FileName>UI\UserInterface.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="BlackHeuristicBvB" />
+      <Field Name="Bot" />
+      <Field Name="M" />
+      <Field Name="BotPvB" />
+      <Field Name="PlayerPvB" />
+      <Field Name="WhiteHeuristicBvB" />
+      <Field Name="currentPlayer" />
+      <Field Name="DifficultyLevel" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="MovesList" />
+      <Field Name="PossibleMovesCoordinates" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="System.Collections.Generic.List&lt;T&gt;" Collapsed="true">
+    <Position X="15" Y="3.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Windows.Forms.Form" Collapsed="true">
+    <Position X="39" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="System.Windows.Forms.Form.ControlCollection" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier />
+  </Class>
+  <Struct Name="Checkers.Coordinates">
+    <Position X="24.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Coordinates.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Checkers.MoveAI">
+    <Position X="29.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAEAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Models\Bot\MoveAI.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Where" />
+    </ShowAsAssociation>
+  </Struct>
+  <Struct Name="Checkers.PieceMove">
+    <Position X="26.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAEAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\PieceMove.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Checkers.TranspositionValue">
+    <Position X="28.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAIAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Models\Bot\TranspositionValue.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="move" />
+    </ShowAsAssociation>
+  </Struct>
+  <Enum Name="Checkers.BotHeuristics">
+    <Position X="19.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>UI\BotHeuristics.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Checkers.BotLevel">
+    <Position X="17.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAIAAwAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>UI\BotLevel.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Checkers.GameState">
+    <Position X="15.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAgACAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\GameState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Checkers.PlayerColor">
+    <Position X="14" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Player.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Checkers.TranspositionEnum">
+    <Position X="24.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAEAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Models\Bot\TranspositionEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
